@@ -22,8 +22,9 @@
 ### Added
 
 - basic project structure
-- support subtitle format: `.srt` and `.ass`
 - a CLI to use the function
+- support subtitle format: `.srt` and `.ass`
+- supporting module `kamilog`
 
 ### Changed
 ### Deprecated
