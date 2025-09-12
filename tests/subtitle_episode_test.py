@@ -5,7 +5,7 @@ tests for: SubtitleEpisode, SrtSubtitleEpisode
 from pathlib import Path
 from tempfile import mkstemp
 
-from kaye.subtitle_translator import SrtSubtitleEpisode, AssSubtitleEpisode
+from kami_llm_verbatim import SrtSubtitleEpisode, AssSubtitleEpisode
 
 TESTEE_DIR = Path(__file__).parent / "testee"
 TESTEE_SRT_SHORT = (TESTEE_DIR / "en_short.srt").resolve()
