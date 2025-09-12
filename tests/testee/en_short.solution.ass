@@ -1,0 +1,63 @@
+[Script Info]
+Title: Random Dialogue
+Original Format: UTF-8
+ScriptType: v4.00
+ Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColor, SecondaryColor, TertiaryColor, Outline, BackColor, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Rotation, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,24,&H00FFFFFF,&H000000FF,&H00000000,1,0,0,0,0,100,100,0,0,0,0,1,1,0,2,10,10,10,1
+
+[Events]
+Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Text
+Dialogue: 0:00:01.00,0:00:05.00,Default,,0,0,0,,hEY, HOW WAS YOUR DAY?
+Dialogue: 0:00:05.50,0:00:09.00,Default,,0,0,0,,pRETTY GOOD! i WENT TO THE PARK AND READ A BOOK.
+Dialogue: 0:00:09.50,0:00:12.00,Default,,0,0,0,,tHAT SOUNDS RELAXING. dID YOU ENJOY THE WEATHER?
+Dialogue: 0:00:12.50,0:00:15.00,Default,,0,0,0,,yES, THE SUN WAS SHINING, AND THERE WAS A COOL BREEZE.
+Dialogue: 0:00:15.50,0:00:18.00,Default,,0,0,0,,nICE! i WISH i COULD HAVE JOINED YOU.
+Dialogue: 0:00:18.50,0:00:21.00,Default,,0,0,0,,nEXT TIME, DEFINITELY. wHAT ABOUT YOU?
+Dialogue: 0:00:21.50,0:00:24.00,Default,,0,0,0,,i HAD A BUSY MORNING AT WORK.
+Dialogue: 0:00:24.50,0:00:27.00,Default,,0,0,0,,oH, WHAT DID YOU DO?
+Dialogue: 0:00:27.50,0:00:30.00,Default,,0,0,0,,hANDLED SOME CLIENT MEETINGS AND ORGANIZED FILES.
+Dialogue: 0:00:30.50,0:00:33.00,Default,,0,0,0,,sOUNDS PRODUCTIVE! dID YOU TAKE ANY BREAKS?
+Dialogue: 0:00:33.50,0:00:36.00,Default,,0,0,0,,bARELY! i GRABBED A QUICK COFFEE AROUND NOON.
+Dialogue: 0:00:36.50,0:00:39.00,Default,,0,0,0,,cOFFEE ALWAYS HELPS. sO, ANY PLANS FOR THE EVENING?
+Dialogue: 0:00:39.50,0:00:42.00,Default,,0,0,0,,tHINKING OF WATCHING A MOVIE. mAYBE ORDER PIZZA.
+Dialogue: 0:00:42.50,0:00:45.00,Default,,0,0,0,,tHAT'S A GOOD IDEA. wANT SOME COMPANY?
+Dialogue: 0:00:45.50,0:00:48.00,Default,,0,0,0,,sURE! tHE MORE, THE MERRIER.
+Dialogue: 0:00:48.50,0:00:51.00,Default,,0,0,0,,gREAT! i'LL BRING OVER SOME SNACKS TOO.
+Dialogue: 0:00:51.50,0:00:54.00,Default,,0,0,0,,aWESOME. bY THE WAY, HAVE YOU SEEN MY KEYS?
+Dialogue: 0:00:54.50,0:00:57.00,Default,,0,0,0,,wHICH KEYS? tHE CAR KEYS?
+Dialogue: 0:00:57.50,0:01:00.00,Default,,0,0,0,,yEAH, i CAN'T FIND THEM ANYWHERE.
+Dialogue: 0:01:00.50,0:01:03.00,Default,,0,0,0,,dID YOU CHECK THE KITCHEN COUNTER?
+Dialogue: 0:01:03.50,0:01:06.00,Default,,0,0,0,,i LOOKED THERE BUT NO LUCK.
+Dialogue: 0:01:06.50,0:01:09.00,Default,,0,0,0,,mAYBE IN YOUR BAG? yOU WERE IN A RUSH EARLIER.
+Dialogue: 0:01:09.50,0:01:12.00,Default,,0,0,0,,gOOD IDEA. lET'S SEE...
+Dialogue: 0:01:12.50,0:01:15.00,Default,,0,0,0,,fOUND THEM! tHEY WERE IN YOUR JACKET POCKET.
+Dialogue: 0:01:15.50,0:01:18.00,Default,,0,0,0,,oH, OF COURSE. sILENT POCKETS STRIKE AGAIN.
+Dialogue: 0:01:18.50,0:01:21.00,Default,,0,0,0,,hAHA! hAPPENS TO EVERYONE. sO, WHAT MOVIE ARE WE WATCHING?
+Dialogue: 0:01:21.50,0:01:24.00,Default,,0,0,0,,hOW ABOUT THAT NEW SCI-FI FILM?
+Dialogue: 0:01:24.50,0:01:27.00,Default,,0,0,0,,sOUNDS PERFECT. i'VE BEEN WANTING TO SEE THAT.
+Dialogue: 0:01:27.50,0:01:30.00,Default,,0,0,0,,gREAT! i'LL ORDER THE PIZZA NOW.
+Dialogue: 0:01:30.50,0:01:33.00,Default,,0,0,0,,dO YOU PREFER PEPPERONI OR VEGGIE?
+Dialogue: 0:01:33.50,0:01:36.00,Default,,0,0,0,,dEFINITELY PEPPERONI. wHAT ABOUT DRINKS?
+Dialogue: 0:01:36.50,0:01:39.00,Default,,0,0,0,,sODA FOR ME, PLEASE. oR MAYBE SOME JUICE.
+Dialogue: 0:01:39.50,0:01:42.00,Default,,0,0,0,,i'LL GET BOTH! jUST TO BE SAFE.
+Dialogue: 0:01:42.50,0:01:45.00,Default,,0,0,0,,pERFECT. sHOULD WE SET UP THE SNACKS NOW?
+Dialogue: 0:01:45.50,0:01:48.00,Default,,0,0,0,,gOOD IDEA. i'LL GRAB SOME CHIPS.
+Dialogue: 0:01:48.50,0:01:51.00,Default,,0,0,0,,aND i'LL GET THE DIP. nICE AND COZY.
+Dialogue: 0:01:51.50,0:01:54.00,Default,,0,0,0,,yES, JUST LIKE OLD TIMES.
+Dialogue: 0:01:54.50,0:01:57.00,Default,,0,0,0,,rEMEMBER WHEN WE STAYED UP ALL NIGHT WATCHING FILMS?
+Dialogue: 0:01:57.50,0:02:00.00,Default,,0,0,0,,hOW COULD i FORGET? tHAT WAS FUN.
+Dialogue: 0:02:00.50,0:02:03.00,Default,,0,0,0,,wE SHOULD DO THAT AGAIN SOMETIME.
+Dialogue: 0:02:03.50,0:02:06.00,Default,,0,0,0,,aBSOLUTELY. mAYBE NEXT WEEKEND?
+Dialogue: 0:02:06.50,0:02:09.00,Default,,0,0,0,,i'LL MARK IT ON MY CALENDAR.
+Dialogue: 0:02:09.50,0:02:12.00,Default,,0,0,0,,lOOKING FORWARD TO IT ALREADY.
+Dialogue: 0:02:12.50,0:02:15.00,Default,,0,0,0,,mE TOO! oH, THE PIZZA SHOULD ARRIVE SOON.
+Dialogue: 0:02:15.50,0:02:18.00,Default,,0,0,0,,gREAT! lET’S GET COMFORTABLE TILL THEN.
+Dialogue: 0:02:18.50,0:02:21.00,Default,,0,0,0,,sOUNDS GOOD. sEE YOU SITTING ON THE SOFA!
+Dialogue: 0:02:21.50,0:02:24.00,Default,,0,0,0,,i'LL BE THERE IN A MINUTE. jUST FINISHING UP HERE.
+Dialogue: 0:02:24.50,0:02:27.00,Default,,0,0,0,,aLRIGHT. lET'S ENJOY THE EVENING.
+Dialogue: 0:02:27.50,0:02:30.00,Default,,0,0,0,,cAN'T WAIT. tHIS WILL BE FUN!
+Dialogue: 0:02:30.50,0:02:33.00,Default,,0,0,0,,dEFINITELY. sEE YOU SOON!

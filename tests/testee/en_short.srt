@@ -1,0 +1,203 @@
+1
+00:00:01,000 --> 00:00:05,000
+Hey, how was your day?
+
+2
+00:00:05,500 --> 00:00:09,000
+Pretty good! I went to the park and read a book.
+
+3
+00:00:09,500 --> 00:00:12,000
+That sounds relaxing. Did you enjoy the weather?
+
+4
+00:00:12,500 --> 00:00:15,000
+Yes,
+the sun was shining,
+and there was a cool breeze.
+
+5
+00:00:15,500 --> 00:00:18,000
+Nice! I wish I could have joined you.
+
+6
+00:00:18,500 --> 00:00:21,000
+Next time, definitely. What about you?
+
+7
+00:00:21,500 --> 00:00:24,000
+I had a busy morning at work.
+
+8
+00:00:24,500 --> 00:00:27,000
+Oh, what did you do?
+
+9
+00:00:27,500 --> 00:00:30,000
+Handled some client meetings and organized files.
+
+10
+00:00:30,500 --> 00:00:33,000
+Sounds productive! Did you take any breaks?
+
+11
+00:00:33,500 --> 00:00:36,000
+Barely! I grabbed a quick coffee around noon.
+
+12
+00:00:36,500 --> 00:00:39,000
+Coffee always helps. So, any plans for the evening?
+
+13
+00:00:39,500 --> 00:00:42,000
+Thinking of watching a movie. Maybe order pizza.
+
+14
+00:00:42,500 --> 00:00:45,000
+That's a good idea. Want some company?
+
+15
+00:00:45,500 --> 00:00:48,000
+Sure! The more, the merrier.
+
+16
+00:00:48,500 --> 00:00:51,000
+Great! I'll bring over some snacks too.
+
+17
+00:00:51,500 --> 00:00:54,000
+Awesome. By the way, have you seen my keys?
+
+18
+00:00:54,500 --> 00:00:57,000
+Which keys? The car keys?
+
+19
+00:00:57,500 --> 00:01:00,000
+Yeah, I can't find them anywhere.
+
+20
+00:01:00,500 --> 00:01:03,000
+Did you check the kitchen counter?
+
+21
+00:01:03,500 --> 00:01:06,000
+I looked there but no luck.
+
+22
+00:01:06,500 --> 00:01:09,000
+Maybe in your bag? You were in a rush earlier.
+
+23
+00:01:09,500 --> 00:01:12,000
+Good idea. Let's see...
+
+24
+00:01:12,500 --> 00:01:15,000
+Found them!
+They were in your jacket pocket.
+
+25
+00:01:15,500 --> 00:01:18,000
+Oh, of course. Silent pockets strike again.
+
+26
+00:01:18,500 --> 00:01:21,000
+Haha! Happens to everyone. So, what movie are we watching?
+
+27
+00:01:21,500 --> 00:01:24,000
+How about that new sci-fi film?
+
+28
+00:01:24,500 --> 00:01:27,000
+Sounds perfect. I've been wanting to see that.
+
+29
+00:01:27,500 --> 00:01:30,000
+Great! I'll order the pizza now.
+
+30
+00:01:30,500 --> 00:01:33,000
+Do you prefer pepperoni or veggie?
+
+31
+00:01:33,500 --> 00:01:36,000
+Definitely pepperoni. What about drinks?
+
+32
+00:01:36,500 --> 00:01:39,000
+Soda for me, please. Or maybe some juice.
+
+33
+00:01:39,500 --> 00:01:42,000
+I'll get both! Just to be safe.
+
+34
+00:01:42,500 --> 00:01:45,000
+Perfect. Should we set up the snacks now?
+
+35
+00:01:45,500 --> 00:01:48,000
+Good idea.
+I'll grab some chips.
+
+36
+00:01:48,500 --> 00:01:51,000
+And I'll get the dip. Nice and cozy.
+
+37
+00:01:51,500 --> 00:01:54,000
+Yes, just like old times.
+
+38
+00:01:54,500 --> 00:01:57,000
+Remember when we stayed up all night watching films?
+
+39
+00:01:57,500 --> 00:02:00,000
+How could I forget? That was fun.
+
+40
+00:02:00,500 --> 00:02:03,000
+We should do that again sometime.
+
+41
+00:02:03,500 --> 00:02:06,000
+Absolutely. Maybe next weekend?
+
+42
+00:02:06,500 --> 00:02:09,000
+I'll mark it on my calendar.
+
+43
+00:02:09,500 --> 00:02:12,000
+Looking forward to it already.
+
+44
+00:02:12,500 --> 00:02:15,000
+Me too! Oh, the pizza should arrive soon.
+
+45
+00:02:15,500 --> 00:02:18,000
+Great! Let’s get comfortable till then.
+
+46
+00:02:18,500 --> 00:02:21,000
+Sounds good. See you sitting on the sofa!
+
+47
+00:02:21,500 --> 00:02:24,000
+I'll be there in a minute. Just finishing up here.
+
+48
+00:02:24,500 --> 00:02:27,000
+Alright. Let's enjoy the evening.
+
+49
+00:02:27,500 --> 00:02:30,000
+Can't wait. This will be fun!
+
+50
+00:02:30,500 --> 00:02:33,000
+Definitely. See you soon!

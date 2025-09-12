@@ -1,0 +1,63 @@
+[Script Info]
+Title: Random Dialogue
+Original Format: UTF-8
+ScriptType: v4.00
+ Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColor, SecondaryColor, TertiaryColor, Outline, BackColor, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Rotation, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,24,&H00FFFFFF,&H000000FF,&H00000000,1,0,0,0,0,100,100,0,0,0,0,1,1,0,2,10,10,10,1
+
+[Events]
+Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Text
+Dialogue: 0:00:01.00,0:00:05.00,Default,,0,0,0,,Hey, how was your day?
+Dialogue: 0:00:05.50,0:00:09.00,Default,,0,0,0,,Pretty good! I went to the park and read a book.
+Dialogue: 0:00:09.50,0:00:12.00,Default,,0,0,0,,That sounds relaxing. Did you enjoy the weather?
+Dialogue: 0:00:12.50,0:00:15.00,Default,,0,0,0,,Yes, the sun was shining, and there was a cool breeze.
+Dialogue: 0:00:15.50,0:00:18.00,Default,,0,0,0,,Nice! I wish I could have joined you.
+Dialogue: 0:00:18.50,0:00:21.00,Default,,0,0,0,,Next time, definitely. What about you?
+Dialogue: 0:00:21.50,0:00:24.00,Default,,0,0,0,,I had a busy morning at work.
+Dialogue: 0:00:24.50,0:00:27.00,Default,,0,0,0,,Oh, what did you do?
+Dialogue: 0:00:27.50,0:00:30.00,Default,,0,0,0,,Handled some client meetings and organized files.
+Dialogue: 0:00:30.50,0:00:33.00,Default,,0,0,0,,Sounds productive! Did you take any breaks?
+Dialogue: 0:00:33.50,0:00:36.00,Default,,0,0,0,,Barely! I grabbed a quick coffee around noon.
+Dialogue: 0:00:36.50,0:00:39.00,Default,,0,0,0,,Coffee always helps. So, any plans for the evening?
+Dialogue: 0:00:39.50,0:00:42.00,Default,,0,0,0,,Thinking of watching a movie. Maybe order pizza.
+Dialogue: 0:00:42.50,0:00:45.00,Default,,0,0,0,,That's a good idea. Want some company?
+Dialogue: 0:00:45.50,0:00:48.00,Default,,0,0,0,,Sure! The more, the merrier.
+Dialogue: 0:00:48.50,0:00:51.00,Default,,0,0,0,,Great! I'll bring over some snacks too.
+Dialogue: 0:00:51.50,0:00:54.00,Default,,0,0,0,,Awesome. By the way, have you seen my keys?
+Dialogue: 0:00:54.50,0:00:57.00,Default,,0,0,0,,Which keys? The car keys?
+Dialogue: 0:00:57.50,0:01:00.00,Default,,0,0,0,,Yeah, I can't find them anywhere.
+Dialogue: 0:01:00.50,0:01:03.00,Default,,0,0,0,,Did you check the kitchen counter?
+Dialogue: 0:01:03.50,0:01:06.00,Default,,0,0,0,,I looked there but no luck.
+Dialogue: 0:01:06.50,0:01:09.00,Default,,0,0,0,,Maybe in your bag? You were in a rush earlier.
+Dialogue: 0:01:09.50,0:01:12.00,Default,,0,0,0,,Good idea. Let's see...
+Dialogue: 0:01:12.50,0:01:15.00,Default,,0,0,0,,Found them! They were in your jacket pocket.
+Dialogue: 0:01:15.50,0:01:18.00,Default,,0,0,0,,Oh, of course. Silent pockets strike again.
+Dialogue: 0:01:18.50,0:01:21.00,Default,,0,0,0,,Haha! Happens to everyone. So, what movie are we watching?
+Dialogue: 0:01:21.50,0:01:24.00,Default,,0,0,0,,How about that new sci-fi film?
+Dialogue: 0:01:24.50,0:01:27.00,Default,,0,0,0,,Sounds perfect. I've been wanting to see that.
+Dialogue: 0:01:27.50,0:01:30.00,Default,,0,0,0,,Great! I'll order the pizza now.
+Dialogue: 0:01:30.50,0:01:33.00,Default,,0,0,0,,Do you prefer pepperoni or veggie?
+Dialogue: 0:01:33.50,0:01:36.00,Default,,0,0,0,,Definitely pepperoni. What about drinks?
+Dialogue: 0:01:36.50,0:01:39.00,Default,,0,0,0,,Soda for me, please. Or maybe some juice.
+Dialogue: 0:01:39.50,0:01:42.00,Default,,0,0,0,,I'll get both! Just to be safe.
+Dialogue: 0:01:42.50,0:01:45.00,Default,,0,0,0,,Perfect. Should we set up the snacks now?
+Dialogue: 0:01:45.50,0:01:48.00,Default,,0,0,0,,Good idea. I'll grab some chips.
+Dialogue: 0:01:48.50,0:01:51.00,Default,,0,0,0,,And I'll get the dip. Nice and cozy.
+Dialogue: 0:01:51.50,0:01:54.00,Default,,0,0,0,,Yes, just like old times.
+Dialogue: 0:01:54.50,0:01:57.00,Default,,0,0,0,,Remember when we stayed up all night watching films?
+Dialogue: 0:01:57.50,0:02:00.00,Default,,0,0,0,,How could I forget? That was fun.
+Dialogue: 0:02:00.50,0:02:03.00,Default,,0,0,0,,We should do that again sometime.
+Dialogue: 0:02:03.50,0:02:06.00,Default,,0,0,0,,Absolutely. Maybe next weekend?
+Dialogue: 0:02:06.50,0:02:09.00,Default,,0,0,0,,I'll mark it on my calendar.
+Dialogue: 0:02:09.50,0:02:12.00,Default,,0,0,0,,Looking forward to it already.
+Dialogue: 0:02:12.50,0:02:15.00,Default,,0,0,0,,Me too! Oh, the pizza should arrive soon.
+Dialogue: 0:02:15.50,0:02:18.00,Default,,0,0,0,,Great! Let’s get comfortable till then.
+Dialogue: 0:02:18.50,0:02:21.00,Default,,0,0,0,,Sounds good. See you sitting on the sofa!
+Dialogue: 0:02:21.50,0:02:24.00,Default,,0,0,0,,I'll be there in a minute. Just finishing up here.
+Dialogue: 0:02:24.50,0:02:27.00,Default,,0,0,0,,Alright. Let's enjoy the evening.
+Dialogue: 0:02:27.50,0:02:30.00,Default,,0,0,0,,Can't wait. This will be fun!
+Dialogue: 0:02:30.50,0:02:33.00,Default,,0,0,0,,Definitely. See you soon!
