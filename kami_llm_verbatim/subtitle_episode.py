@@ -2,9 +2,14 @@
 implement SubtitleEpisode and its concrete children classes
 """
 
+from kami_llm_verbatim import kamilog
+
 import re
 
 __all__ = ("SubtitleEpisode", "SrtSubtitleEpisode", "AssSubtitleEpisode")
+
+
+logger = kamilog.getLogger()
 
 
 class SubtitleEpisode:
@@ -75,9 +80,6 @@ class SubtitleEpisode:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
-        if exc_type:  # FIXME better handle error
-            return False
-
         self._reconstruct()
 
         # properly close opened files
@@ -100,7 +102,9 @@ class SrtSubtitleEpisode(SubtitleEpisode):
             match = re.match(self.LINE_PATTERN, line, re.DOTALL)
 
             if not match:
-                raise Exception  # FIXME
+                err = ValueError("invalid .srt line: {}".format(repr(line)))
+                logger.exception(err)
+                raise err
 
             self._timestamps.append(match.group(1))
             self.lines.append(match.group(2))
@@ -131,7 +135,9 @@ class AssSubtitleEpisode(SubtitleEpisode):
         entire_match = re.match(self.PATTERN, content, re.DOTALL)
 
         if not entire_match:
-            raise Exception  # FIXME
+            err = ValueError("invalid .ass syntax")
+            logger.exception(err)
+            raise err
 
         self._prefix = entire_match.group(1)
         lines = entire_match.group(2)
@@ -139,7 +145,9 @@ class AssSubtitleEpisode(SubtitleEpisode):
         # populate by lines
         for line_match in re.finditer(self.LINE_PATTERN, lines, re.MULTILINE):
             if not line_match:
-                raise Exception  # FIXME
+                err = ValueError("invalid .ass line")
+                logger.exception(err)
+                raise err
 
             self._timestamps.append(line_match.group(1))
             self.lines.append(line_match.group(2))
