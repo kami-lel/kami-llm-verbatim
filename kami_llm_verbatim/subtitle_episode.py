@@ -1,4 +1,7 @@
-# todo docstring
+"""
+implement SubtitleEpisode and its concrete children classes
+"""
+
 import re
 
 __all__ = ("SubtitleEpisode", "SrtSubtitleEpisode", "AssSubtitleEpisode")
@@ -6,7 +9,9 @@ __all__ = ("SubtitleEpisode", "SrtSubtitleEpisode", "AssSubtitleEpisode")
 
 class SubtitleEpisode:
     """
-    abstract representation of an episode of subtitle
+    abstract representation of an episode of subtitle,
+    allow one to extract and reconstruct a a subtitle file with correct format
+    without worrying about differences in subtitle file format
 
 
     :param src_file_path: original untranslated subtitle file

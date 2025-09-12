@@ -20,6 +20,11 @@
 ## [Unreleased]
 
 ### Added
+
+- basic project structure
+- support subtitle format: `.srt` and `.ass`
+- a CLI to use the function
+
 ### Changed
 ### Deprecated
 ### Removed
