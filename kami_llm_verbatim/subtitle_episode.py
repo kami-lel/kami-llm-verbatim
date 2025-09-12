@@ -58,7 +58,7 @@ class SubtitleEpisode:
 
         self._populate()
 
-        self.translated_lines = [None] * len(self.lines)
+        self.translated_lines = [None] * len(self)
 
     def _populate(self):
         """
@@ -80,6 +80,12 @@ class SubtitleEpisode:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
+        # test all lines are "translated"
+        print(self.translated_lines)  # HACK
+        for line in self.translated_lines:
+            if not isinstance(line, str):
+                raise Exception(line)
+
         self._reconstruct()
 
         # properly close opened files
@@ -87,6 +93,13 @@ class SubtitleEpisode:
         self._dest_file.close()
 
         return True
+
+    def __len__(self):
+        """
+        :return: number of lines in this episode
+        :rtype: int
+        """
+        return len(self.lines)
 
 
 class SrtSubtitleEpisode(SubtitleEpisode):
