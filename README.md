@@ -1,1 +1,3 @@
-# kami-llm-subtitle-translator
+# kami-llm-verbatim README
+
+<!-- todo write README -->
