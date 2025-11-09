@@ -83,23 +83,39 @@ Output::
         1 / 0
         ~~^~~
     ZeroDivisionError: division by zero
-"""
 
-# todo option to use relative time
-# todo option to omit date in time
-# todo include logger name in the message
+
+
+verbosity and logging level:
+
+Set up parser with options of `-v/--verbose` and `-q/--quiet`::
+
+    from argparse import ArgumentParser
+
+    parser = ArgumentParser()
+    add_verbose_arguments(parser)
+
+After parsing, set logging level of logger by verbosity of this parser::
+
+    args = parser.parse_args()
+    set_logging_level_by_verbosity(args)
+
+Alternatively, calc the verbosity as a number::
+
+    print(calc_verbosity(args))  # 1
+"""
 
 import logging
 from logging import Formatter, StreamHandler
 
-__version__ = "1.1.1-alpha"
+__version__ = "1.2.0"
 __author__ = "kamiLeL"
 __all__ = ("getLogger",)
 
 
+# customized logger  ###########################################################
+
 MESSAGE_FORMAT = "[%(asctime)s] %(levelname)s: %(message)s"
-
-
 _PADDED_LEVELNAMES = ("DEBUG", "INFO ", "WARN ", "ERROR", "CRIT ")
 
 
@@ -157,8 +173,91 @@ def getLogger(name=None):
     console_handler.setFormatter(console_formatter)
     logger.addHandler(console_handler)
 
-    # todo add file handler option
-
     _INITIALIZED_LOGGERS.append(name)
 
     return logger
+
+
+# verbosity & logging level  ###################################################
+
+
+def add_verbose_arguments(parser):
+    """
+    add -v/--verbose and -q/--quiet options to ``parser``
+
+
+    :param parser:
+    :type parser: argparse.ArgumentParser
+    """
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="count",
+        default=0,
+        help="make verbose; each -v/--verbose increase verbosity value by 1",
+    )
+    parser.add_argument(
+        "-q",
+        "--quiet",
+        action="count",
+        default=0,
+        help="make quiet; each -q/--quiet decrease verbosity value by 1",
+    )
+
+
+def calc_verbosity(namespace):
+    """
+    calculate a **verbosity** value from --verbose &/ --quiet options
+    contained in ``namespace``
+
+    verbosity default to 0,
+    each -v/--verbose flag will +1 to verbosity,
+    each -q/--quiet flag will -1 to verbosity,
+    no upper/lower bounds
+
+
+    :param namespace: parsed from parser with --verbose & --quiet options
+    :type namespace: argparse.Namespace
+    :return: verbosity number
+    :rtype: int
+    """
+    verbosity = 0
+
+    if hasattr(namespace, "verbose"):
+        verbosity += namespace.verbose
+    if hasattr(namespace, "quiet"):
+        verbosity -= namespace.quiet
+
+    return verbosity
+
+
+def set_logging_level_by_verbosity(namespace, logger_name=None):
+    """
+    set **logging level** of a logger based on *verbosity* calculated
+    from --verbose &/ --quiet options contained in ``namespace``
+
+    - ``-vv`` (or more): DEBUG
+    - ``-v``: INFO
+    - no option: WARNING
+    - ``-q`` (or more): all message suppressed, even CRITICAL
+
+
+    :param namespace: parsed from parser with --verbose &/ --quiet
+    :type namespace: argparse.Namespace
+    :param logger_name: set specific logger with this name
+            defaults to None, set root logger
+    :type logger_name: str, optional
+    """
+    verbosity = calc_verbosity(namespace)
+
+    if verbosity >= 2:
+        level = logging.DEBUG
+    elif verbosity == 1:
+        level = logging.INFO
+    elif verbosity == 0:
+        level = logging.WARNING
+    else:
+        level = logging.CRITICAL + 1
+
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(level)
