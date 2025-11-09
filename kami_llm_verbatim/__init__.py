@@ -2,7 +2,7 @@
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-from .subtitle_episode import SrtSubtitleEpisode
+from .episode_srt import SrtSubtitleEpisode
 
 MAX_WORKERS = 8
 LINES_PER_RESPONSE = 2  # HACK
@@ -38,3 +38,6 @@ def translate(src_file_path, dest_file_path):
 
         for i, payload in updates:
             episode.translated_lines[i * LINES_PER_RESPONSE] = payload
+
+
+# todo additional subtitle formats
