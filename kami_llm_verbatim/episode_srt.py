@@ -1,5 +1,5 @@
 """
-TODO docstring
+implement `SrtSubtitleEpisode`
 """
 
 import re
