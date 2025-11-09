@@ -19,7 +19,7 @@ class TestSrt:
     def test_parse(_):
         _, dest_file_path = mkstemp()
 
-        # perform translation of case swapping
+        # simulate translation of case swapping
         with SrtSubtitleEpisode(TESTEE_SRT_SHORT, dest_file_path) as episode:
             for i, line in enumerate(episode.lines):
                 episode.translated_lines[i] = line.swapcase()
@@ -40,7 +40,7 @@ class TestAss:
     def test_parse(_):
         _, dest_file_path = mkstemp()
 
-        # perform translation of case swapping
+        # simulate translation of case swapping
         with AssSubtitleEpisode(TESTEE_ASS_SHORT, dest_file_path) as episode:
             for i, line in enumerate(episode.lines):
                 episode.translated_lines[i] = line.swapcase()
