@@ -2,7 +2,12 @@
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
+from .episode import SubtitleEpisode
 from .episode_srt import SrtSubtitleEpisode
+from .episode_ass import AssSubtitleEpisode
+
+__all__ = ("SubtitleEpisode", "SrtSubtitleEpisode", "AssSubtitleEpisode")
+
 
 MAX_WORKERS = 8
 LINES_PER_RESPONSE = 2  # HACK
