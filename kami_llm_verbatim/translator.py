@@ -2,8 +2,16 @@
 implement ``SubtitleTranslator``
 """
 
+import shutil
+from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from .episode import SubtitleEpisode
+
+from pyjson5 import load as json5_load
+
+CONFIG_FILE_PATH = (Path(__file__).parent / "config.json").resolve()
+DEFAULT_CONFIG_FILE_PATH = (
+    Path(__file__).parent / "config.default.json"
+).resolve()
 
 
 class SubtitleTranslator:
@@ -16,6 +24,17 @@ class SubtitleTranslator:
 
     def __init__(self, episode):
         self.episode = episode
+        self.config = self._load_config_from_file()
+
+    @staticmethod
+    def _load_config_from_file():
+        # ensure config.json exists
+        if not CONFIG_FILE_PATH.exists():
+            CONFIG_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(DEFAULT_CONFIG_FILE_PATH, CONFIG_FILE_PATH)
+
+        with open(CONFIG_FILE_PATH, "r", encoding="utf-8") as f:
+            return json5_load(f)
 
 
 # TODO refactor as a class
