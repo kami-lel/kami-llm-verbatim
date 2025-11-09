@@ -1,4 +1,5 @@
 # todo module docstring
+# todo additional subtitle formats
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
@@ -8,6 +9,8 @@ from .episode_ass import AssSubtitleEpisode
 
 __all__ = ("SubtitleEpisode", "SrtSubtitleEpisode", "AssSubtitleEpisode")
 
+
+# TODO refactor as a class
 
 MAX_WORKERS = 8
 LINES_PER_RESPONSE = 2  # HACK
@@ -43,6 +46,3 @@ def translate(src_file_path, dest_file_path):
 
         for i, payload in updates:
             episode.translated_lines[i * LINES_PER_RESPONSE] = payload
-
-
-# todo additional subtitle formats
