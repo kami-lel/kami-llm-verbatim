@@ -42,8 +42,8 @@ class SubtitleEpisode:
         )
 
         self._timestamps = []
-        self._prefix = None
-        self._suffix = None
+        self._prefix = ""
+        self._suffix = ""
 
         # init public variables
         self.lines = []
@@ -55,13 +55,20 @@ class SubtitleEpisode:
 
     def _populate(self):
         """
-        reading from `._src_file` and populate `.timestamps` and `.lines`,
-        also may write to `._prefix` and `._suffix`
+        extract and parse content from original subtitle file
+
+        reading from original subtitle file `._src_file`, and extract content;
+        populate `.lines` with subtitle lines,
+        and populate `.timestamps` with respective timestamp content
+        (both `.lines` and `timestamps` are `list`s of `str`)
+
+        may write to `._prefix` and `._suffix`, both
         """
         raise NotImplementedError
 
     def _reconstruct(self):
         """
+
         taken `.timestamps` and `.translated_lines`
         (may also read from `._prefix` and `._suffix`,)
         and write into `._dest_file` with proper structure
@@ -73,12 +80,7 @@ class SubtitleEpisode:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
-        # test all lines are "translated"
-        print(self.translated_lines)  # HACK
-        for line in self.translated_lines:
-            if not isinstance(line, str):
-                raise Exception(line)
-
+        # TODO translate
         self._reconstruct()
 
         # properly close opened files
