@@ -4,12 +4,12 @@ implement ``SubtitleTranslator``
 
 import shutil
 from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 import math
 
 from pyjson5 import load as json5_load
 
-from kamilog import kamilog
+from kami_llm_verbatim import kamilog
 
 CONFIG_FILE_PATH = (Path(__file__).parent / "config.json").resolve()
 DEFAULT_CONFIG_FILE_PATH = (
@@ -71,4 +71,7 @@ class SubtitleTranslator:
     _llm_api_key = None
 
     def _translate_trunk(self, episode, trunk_index):
+        """
+        per connection, per trunk worker
+        """
         pass  # TODO
