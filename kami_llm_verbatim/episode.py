@@ -52,6 +52,7 @@ class SubtitleEpisode:
 
         self._populate()
 
+        # pre-allocation to allow multi-treads operations
         self.translated_lines = [None] * len(self)
 
     def _populate(self):
