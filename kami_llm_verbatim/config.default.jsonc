@@ -1,6 +1,8 @@
 {
-    // max number of concurrent connections to LLM API
-    "max_response": 8,
+    "llm_api_key": "null",
+
     // number of subtitle lines in each response
-    "lines_per_response": 32
+    "lines_per_response": 32,
+    // max number of concurrent connections to LLM API
+    "max_responses": 4
 }

@@ -53,6 +53,8 @@ class SubtitleEpisode:
 
         self.translated_lines = [None] * len(self)
 
+        self._reconstruct()
+
     def _populate(self):
         """
         extract and parse content from original subtitle file
@@ -80,9 +82,6 @@ class SubtitleEpisode:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
-        # TODO translate
-        self._reconstruct()
-
         # properly close opened files
         self._src_file.close()
         self._dest_file.close()
