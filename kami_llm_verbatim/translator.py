@@ -26,31 +26,26 @@ class SubtitleTranslator:
 
     """
 
-    config = None
-    max_response = None
-    lines_per_response = None
-    llm_api_key = None
-
     def __init__(self):
         # load various configs if never loaded into class
-        if self.config is None:
+        if self._config is None:
             # ensure config.json exists
             if not CONFIG_FILE_PATH.exists():
                 CONFIG_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(DEFAULT_CONFIG_FILE_PATH, CONFIG_FILE_PATH)
 
             with open(CONFIG_FILE_PATH, "r", encoding="utf-8") as f:
-                self.config = json5_load(f)
+                self._config = json5_load(f)
 
-            logger.debug("load config.json:\n%s", self.config)
+            logger.debug("load config.json:\n%s", self._config)
 
             # read configs  ----------------------------------------------------
-            self.max_responses = self.config["max_responses"]
-            self.lines_per_response = self.config["lines_per_response"]
+            self._max_responses = self._config["max_responses"]
+            self._lines_per_response = self._config["lines_per_response"]
 
             # assert llm api key exists
-            self.llm_api_key = self.config["llm_api_key"]
-            if self.llm_api_key is None:
+            self._llm_api_key = self._config["llm_api_key"]
+            if self._llm_api_key is None:
                 err = ValueError("llm_api_key is required in config.json")
                 logger.error(err)
                 raise err
@@ -62,13 +57,18 @@ class SubtitleTranslator:
         :param episode:
         :type episode: SubtitleEpisode
         """
-        total_trunk_count = math.ceil(len(episode) / self.lines_per_response)
+        total_trunk_count = math.ceil(len(episode) / self._lines_per_response)
 
         # multiple treading for network blocking
-        with ThreadPoolExecutor(max_workers=self.max_responses) as executor:
+        with ThreadPoolExecutor(max_workers=self._max_responses) as executor:
             for trunk_index in range(total_trunk_count):
                 # Bug better error handling, such as resubmitting
                 executor.submit(self._translate_trunk, episode, trunk_index)
+
+    _config = None
+    _max_responses = None
+    _lines_per_response = None
+    _llm_api_key = None
 
     def _translate_trunk(self, episode, trunk_index):
         pass  # TODO
