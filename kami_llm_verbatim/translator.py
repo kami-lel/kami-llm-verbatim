@@ -7,7 +7,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import math
 
-from pyjson5 import load as json5_load  # pylint: disable=E0611
+from pyjson5 import load as json5_load  # pylint: disable=no-name-in-module
 
 from kami_llm_verbatim import kamilog
 
@@ -74,4 +74,9 @@ class SubtitleTranslator:
         """
         per connection, per trunk worker used by TreadPoolExecutor
         """
-        pass  # TODO
+        start_idx = trunk_index * self._lines_per_response
+        end_idx = min(
+            (trunk_index + 1) * self._lines_per_response, len(episode)
+        )
+        trunk_content = episode.lines[start_idx, end_idx]
+        # TODO actual translate

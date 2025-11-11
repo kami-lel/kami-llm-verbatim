@@ -51,6 +51,7 @@ class SubtitleEpisode:
         self.translated_lines = []
 
         self._populate()
+        self._len = len(self.lines)
 
         # pre-allocation to allow multi-treads operations
         self.translated_lines = [None] * len(self)
@@ -95,4 +96,4 @@ class SubtitleEpisode:
         :return: number of lines in this episode
         :rtype: int
         """
-        return len(self.lines)
+        return self._len
