@@ -23,6 +23,7 @@ class SubtitleEpisode:
     :example: ...
 
     with SrtSubtitleEpisode(src_file, dest_file) as episode:
+        # perform actual translation
         for i, line in enumerate(episode.lines):
             translated = actual_translating_function(line)
             episode.translated_lines[i] = translated
@@ -53,8 +54,6 @@ class SubtitleEpisode:
 
         self.translated_lines = [None] * len(self)
 
-        self._reconstruct()
-
     def _populate(self):
         """
         extract and parse content from original subtitle file
@@ -82,6 +81,8 @@ class SubtitleEpisode:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
+        self._reconstruct()
+
         # properly close opened files
         self._src_file.close()
         self._dest_file.close()
